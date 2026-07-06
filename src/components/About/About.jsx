@@ -47,7 +47,7 @@ function About() {
             viewport={{ once: true }}
           >
 
-            
+              
 
             <p className="text-gray-300 leading-8 mb-5">
               I am currently pursuing my M.Sc. in Data Science &

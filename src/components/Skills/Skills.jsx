@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 import {
   FaPython,
   FaDatabase,
@@ -6,26 +7,44 @@ import {
   FaGithub,
   FaLinux,
   FaCode,
+  FaChartLine,
+  FaProjectDiagram,
+  FaObjectGroup,
+  FaLayerGroup,
+  FaBrain,
+  FaRobot,
+  FaComments,
 } from "react-icons/fa";
 
 import {
-  SiJupyter,
-  SiPandas,
   SiNumpy,
+  SiPandas,
   SiScikitlearn,
   SiTensorflow,
   SiPytorch,
   SiMysql,
   SiAnaconda,
-  SiVisualstudiocode,
+  SiJupyter,
+  SiPlotly,
+  SiHuggingface,
 } from "react-icons/si";
+
+import {
+  GiArtificialHive,
+  GiProcessor,
+  GiCircuitry,
+  GiArtificialIntelligence,
+} from "react-icons/gi";
+
+import { VscCode } from "react-icons/vsc";
+import { TbFileTypography } from "react-icons/tb";
 
 const skillCategories = [
   {
     title: "Programming Languages",
     skills: [
       { name: "Python", icon: <FaPython /> },
-      { name: "SQL", icon: <FaDatabase /> },
+      { name: "C", icon: <FaCode /> },
     ],
   },
 
@@ -34,26 +53,51 @@ const skillCategories = [
     skills: [
       { name: "NumPy", icon: <SiNumpy /> },
       { name: "Pandas", icon: <SiPandas /> },
+      { name: "Matplotlib", icon: <SiPlotly /> },
+      { name: "Scikit-learn", icon: <SiScikitlearn /> },
       { name: "Data Analysis", icon: <FaCode /> },
       { name: "Data Visualization", icon: <FaCode /> },
     ],
   },
 
   {
-    title: "Machine Learning & AI",
+    title: "Machine Learning",
     skills: [
-      { name: "Machine Learning", icon: <SiScikitlearn /> },
-      { name: "Deep Learning", icon: <SiTensorflow /> },
-      { name: "PyTorch", icon: <SiPytorch /> },
-      { name: "Large Language Models", icon: <FaCode /> },
+      { name: "Regression", icon: <FaChartLine /> },
+      { name: "Classification", icon: <FaProjectDiagram /> },
+      { name: "Clustering", icon: <FaObjectGroup /> },
+      { name: "Ensemble Learning", icon: <FaLayerGroup /> },
     ],
   },
 
   {
-    title: "Databases",
+  title: "Deep Learning",
+  skills: [
+    { name: "PyTorch", icon: <SiPytorch /> },
+    { name: "TensorFlow", icon: <SiTensorflow /> },
+    { name: "Artificial Neural Networks", icon: <FaBrain /> },
+    { name: "CNN", icon: <GiArtificialHive /> },
+    { name: "RNN", icon: <GiProcessor /> },
+    { name: "LSTM", icon: <GiCircuitry /> },
+    { name: "Transformer", icon: <GiArtificialIntelligence /> },
+    ],
+  },
+
+  {
+    title: "Artificial Intelligence",
     skills: [
-      { name: "MySQL", icon: <SiMysql /> },
-      { name: "SQL Queries", icon: <FaDatabase /> },
+      { name: "Generative AI", icon: <FaRobot /> },
+      { name: "Large Language Models", icon: <FaBrain /> },
+      { name: "Prompt Engineering", icon: <FaComments /> },
+      { name: "Hugging Face", icon: <SiHuggingface /> },
+    ],
+  },
+
+  {
+  title: "Databases",
+  skills: [
+    { name: "MySQL", icon: <SiMysql /> },
+    { name: "SQL Queries", icon: <FaDatabase /> },
     ],
   },
 
@@ -64,8 +108,12 @@ const skillCategories = [
       { name: "GitHub", icon: <FaGithub /> },
       { name: "Jupyter Notebook", icon: <SiJupyter /> },
       { name: "Anaconda", icon: <SiAnaconda /> },
-      { name: "VS Code", icon: <SiVisualstudiocode /> },
+      {
+        name: "VS Code",
+        icon: <VscCode />,
+      },  
       { name: "Linux", icon: <FaLinux /> },
+      { name: "LaTeX", icon: <TbFileTypography /> },
     ],
   },
 
