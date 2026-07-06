@@ -23,6 +23,12 @@ const projects = [
     demo: "",
 
     image: "/projects/llama.png",
+
+    category: "Distributed Computing",
+
+    status: "Completed",
+
+    imageLabel: "LLM"
   },
 
   {
@@ -53,6 +59,12 @@ const projects = [
     demo: "",
 
     image: "/projects/log-ai.png",
+
+    category: "Generative AI",
+
+    status: "Completed",
+
+    imageLabel: "RAG"
   },
 
   {
@@ -81,6 +93,10 @@ const projects = [
     demo: "",
 
     image: "/projects/plant.png",
+
+    category: "Deep Learning",
+
+    imageLabel: "CNN"
   },
 
   {
@@ -109,6 +125,10 @@ const projects = [
     demo: "",
 
     image: "/projects/spam.png",
+
+    category: "Machine Learning",
+
+    imageLabel: "NLP"
   },
 
   {
@@ -140,6 +160,10 @@ const projects = [
     demo: "",
 
     image: "/projects/encryption.png",
+
+    category: "Machine Learning & Cryptography",
+
+    imageLabel: "Security"
   },
 ];
 

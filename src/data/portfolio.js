@@ -1,6 +1,16 @@
 const portfolio = {
   name: "Arkadip Kansabanik",
 
+  email: "arkadipkansabanik@gmail.com",
+
+  phone: "+91-6291880334",
+
+  location: "Konnagar, Hooghly, West Bengal, India",
+
+  github: "https://github.com/Arkadip-Kansabanik",
+
+  linkedin: "https://www.linkedin.com/in/arkadip-kansabanik-b1724b392",
+
   title: "Data Science Student",
 
   roles: [
@@ -22,7 +32,7 @@ const portfolio = {
     email: "arkadipkansabanik@gmail.com",
   },
 
-  resume: "/resume.pdf",
+  resume: "/resume/resume.pdf",
 
   profileImage: "/images/profile.jpg",
 

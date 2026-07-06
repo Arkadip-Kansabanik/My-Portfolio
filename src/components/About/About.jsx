@@ -170,9 +170,9 @@ function About() {
                 2025 – 2027
               </p>
 
-              <p className="text-cyan-400 mt-2">
+              {/* <p className="text-cyan-400 mt-2">
                 Current CGPA : 5.83
-              </p>
+              </p> */}
 
             </div>
 
