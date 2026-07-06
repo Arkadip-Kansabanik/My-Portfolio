@@ -1,6 +1,9 @@
 function Skills() {
   return (
-    <section className="h-screen flex items-center justify-center">
+    <section
+      id="skills"
+      className="h-screen flex items-center justify-center"
+    >
       <h1 className="text-5xl font-bold">
         Skills Section
       </h1>

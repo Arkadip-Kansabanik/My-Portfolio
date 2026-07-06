@@ -1,6 +1,9 @@
 function Projects() {
   return (
-    <section className="h-screen flex items-center justify-center">
+    <section
+      id="projects"
+      className="h-screen flex items-center justify-center"
+    >
       <h1 className="text-5xl font-bold">
         Projects Section
       </h1>

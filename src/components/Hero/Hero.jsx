@@ -2,12 +2,15 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { Typewriter } from "react-simple-typewriter";
-
+import { Link } from "react-scroll";
 import portfolio from "../../data/portfolio";
 
 function Hero() {
   return (
-    <section className="min-h-screen bg-slate-950 text-white flex items-center">
+    <section
+      id="home"
+      className="min-h-screen bg-slate-950 text-white flex items-center"
+    >
       <div className="max-w-7xl mx-auto w-full px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
@@ -61,9 +64,15 @@ function Hero() {
                 Download Resume
               </a>
 
-              <button className="border border-cyan-500 hover:bg-cyan-500 hover:text-black hover:scale-105 transition-all duration-300 px-6 py-3 rounded-lg">
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="border border-cyan-500 hover:bg-cyan-500 hover:text-black hover:scale-105 transition-all duration-300 px-6 py-3 rounded-lg cursor-pointer"
+              >
                 Contact Me
-              </button>
+              </Link>
             </motion.div>
 
             {/* Social Icons */}
