@@ -179,7 +179,7 @@ function Hero() {
         <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 text-center hover:border-cyan-400 transition-all duration-300 hover:-translate-y-2">
 
           <h3 className="text-3xl font-bold text-cyan-400">
-            5+
+            5
           </h3>
 
           <p className="text-gray-400 mt-2">
