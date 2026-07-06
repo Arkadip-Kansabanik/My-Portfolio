@@ -25,6 +25,25 @@ const portfolio = {
   resume: "/resume.pdf",
 
   profileImage: "/images/profile.jpg",
+
+  stats: [
+  {
+    number: "5+",
+    label: "Projects",
+  },
+  {
+    number: "50+",
+    label: "LeetCode Problems",
+  },
+  {
+    number: "8.59",
+    label: "B.Sc. CGPA",
+  },
+  {
+    number: "M.Sc.",
+    label: "Data Science & AI",
+  },
+],
 };
 
 export default portfolio;
