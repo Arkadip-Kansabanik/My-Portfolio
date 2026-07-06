@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import { Typewriter } from "react-simple-typewriter";
 
 import portfolio from "../../data/portfolio";
 
@@ -25,8 +26,16 @@ function Hero() {
               {portfolio.name}
             </h1>
 
-            <h2 className="text-2xl text-gray-300 mt-6 leading-relaxed">
-              {portfolio.subtitle}
+            <h2 className="text-2xl text-gray-300 mt-6 h-12">
+              <Typewriter
+                words={portfolio.roles}
+                loop={0}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={40}
+                delaySpeed={1800}
+              />
             </h2>
 
             <p className="text-gray-400 mt-8 leading-8">
@@ -44,9 +53,13 @@ function Hero() {
                 delay: 0.5,
               }}
             >
-              <button className="bg-cyan-500 hover:bg-cyan-600 hover:scale-105 transition-all duration-300 px-6 py-3 rounded-lg font-semibold text-black shadow-lg">
+              <a
+                href={portfolio.resume}
+                download
+                className="bg-cyan-500 hover:bg-cyan-600 hover:scale-105 transition-all duration-300 px-6 py-3 rounded-lg font-semibold text-black shadow-lg"
+              >
                 Download Resume
-              </button>
+              </a>
 
               <button className="border border-cyan-500 hover:bg-cyan-500 hover:text-black hover:scale-105 transition-all duration-300 px-6 py-3 rounded-lg">
                 Contact Me
@@ -59,15 +72,31 @@ function Hero() {
               className="flex gap-6 mt-10 text-3xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{
-                delay: 0.9,
-              }}
+              transition={{ delay: 0.9 }}
             >
-              <FaGithub className="cursor-pointer hover:text-cyan-400 hover:scale-125 transition-all duration-300" />
+              <a
+                href={portfolio.social.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="cursor-pointer hover:text-cyan-400 hover:scale-125 transition-all duration-300" />
+              </a>
 
-              <FaLinkedin className="cursor-pointer hover:text-cyan-400 hover:scale-125 transition-all duration-300" />
+              <a
+                href={portfolio.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="cursor-pointer hover:text-cyan-400 hover:scale-125 transition-all duration-300" />
+              </a>
 
-              <SiLeetcode className="cursor-pointer hover:text-cyan-400 hover:scale-125 transition-all duration-300" />
+              <a
+                href={portfolio.social.leetcode}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiLeetcode className="cursor-pointer hover:text-cyan-400 hover:scale-125 transition-all duration-300" />
+              </a>
             </motion.div>
           </motion.div>
 
@@ -82,10 +111,14 @@ function Hero() {
               delay: 0.4,
             }}
           >
-            <div className="w-96 h-96 rounded-full bg-slate-800 border-4 border-cyan-500 flex items-center justify-center shadow-2xl">
-              <span className="text-2xl text-gray-400">
-                Your Photo
-              </span>
+            <div className="w-96 h-96 rounded-full bg-slate-800 border-4 border-cyan-500 flex items-center justify-center shadow-2xl overflow-hidden">
+
+              <img
+                src={portfolio.profileImage}
+                alt={portfolio.name}
+                className="w-full h-full object-cover"
+              />
+
             </div>
           </motion.div>
 
