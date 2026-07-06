@@ -2,12 +2,14 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
+import portfolio from "../../data/portfolio";
+
 function Hero() {
   return (
     <section className="min-h-screen bg-slate-950 text-white flex items-center">
       <div className="max-w-7xl mx-auto w-full px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          
+
           {/* Left Side */}
 
           <motion.div
@@ -20,21 +22,15 @@ function Hero() {
             </p>
 
             <h1 className="text-6xl font-bold leading-tight">
-              Arkadip
-              <br />
-              Kansabanik
+              {portfolio.name}
             </h1>
 
             <h2 className="text-2xl text-gray-300 mt-6 leading-relaxed">
-              Data Science Student | Aspiring AI Engineer |
-              Machine Learning Enthusiast | Python Developer
+              {portfolio.subtitle}
             </h2>
 
             <p className="text-gray-400 mt-8 leading-8">
-              Passionate about Artificial Intelligence,
-              Machine Learning, Deep Learning,
-              Large Language Models,
-              and Full Stack AI Applications.
+              {portfolio.description}
             </p>
 
             {/* Buttons */}
@@ -92,6 +88,7 @@ function Hero() {
               </span>
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>
