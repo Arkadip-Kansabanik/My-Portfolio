@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-scroll";
+
 import portfolio from "../../data/portfolio";
 
 function Hero() {
@@ -21,6 +22,22 @@ function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
+
+            {/* Availability Badge */}
+
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500 text-green-400 px-4 py-2 rounded-full mb-6"
+            >
+              <span className="w-3 h-3 rounded-full bg-green-400 animate-pulse"></span>
+
+              <span className="text-sm font-medium">
+                {portfolio.availability}
+              </span>
+            </motion.div>
+
             <p className="text-cyan-400 text-xl mb-4">
               Hello, I'm
             </p>
@@ -107,6 +124,7 @@ function Hero() {
                 <SiLeetcode className="cursor-pointer hover:text-cyan-400 hover:scale-125 transition-all duration-300" />
               </a>
             </motion.div>
+
           </motion.div>
 
           {/* Right Side */}

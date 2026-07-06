@@ -12,6 +12,8 @@ const portfolio = {
 
   description:
     "Passionate about Artificial Intelligence, Machine Learning, Deep Learning, Large Language Models and Full Stack AI Applications.",
+  
+  availability: "Available for Full-Time Opportunities",
 
   social: {
     github: "https://github.com/Arkadip-Kansabanik",
