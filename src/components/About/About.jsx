@@ -163,7 +163,7 @@ function About() {
 
               <p className="text-gray-300">
                 Ramakrishna Mission Vivekananda Educational &
-                Research Institute, Belur
+                Research Institute, Belur, Howrah
               </p>
 
               <p className="text-gray-400 mt-2">
@@ -216,7 +216,7 @@ function About() {
               </div>
 
               <p className="text-gray-300">
-                Mahesh Sri Ramakrishna Ashram Vidyalaya
+                Mahesh Sri Ramakrishna Ashram Vidyalaya, Rishra, Hooghly
               </p>
 
               <p className="text-gray-400 mt-2">
@@ -242,7 +242,7 @@ function About() {
               </div>
 
               <p className="text-gray-300">
-                Uttarpara Children's Own Home
+                Uttarpara Children's Own Home, Hooghly
               </p>
 
               <p className="text-gray-400 mt-2">
